@@ -24,6 +24,12 @@ class Student
   end 
   
   # .drop_table
+  def self.drop_table
+    sql = <<-SQL
+      DROP TABLE students
+      SQL
+  end 
+  
   # #save_instance_to_table
   # #create_and_save_instance_to_table 
 
