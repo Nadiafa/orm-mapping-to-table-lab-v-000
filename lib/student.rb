@@ -32,6 +32,13 @@ class Student
   end 
   
   # #save_instance_to_table
+  def save 
+    sql = <<-SQL
+      INSERT INTO students (name, grade)
+        VALUES (?,?)
+    SQL
+    DB[:conn].execute(sql, self.name, self.grade)
+  end 
   # #create_and_save_instance_to_table 
 
 
