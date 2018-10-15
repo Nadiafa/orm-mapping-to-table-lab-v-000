@@ -10,7 +10,8 @@ class Student
   # #create_and_save_instance_to_table 
 
 
-  attr_accessor :name, :grade, :id
+  attr_accessor :name, :grade
+  attr_reader :id
   
   
   
