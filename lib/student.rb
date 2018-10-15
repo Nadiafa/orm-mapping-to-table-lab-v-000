@@ -1,5 +1,6 @@
 class Student
-
+  # connection to database: DB[:conn]
+  
   # map to database table 
   # .create_table
   # .drop_table
