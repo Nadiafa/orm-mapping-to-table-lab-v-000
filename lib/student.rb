@@ -28,6 +28,7 @@ class Student
     sql = <<-SQL
       DROP TABLE students
       SQL
+    DB[:conn].execute(sql)
   end 
   
   # #save_instance_to_table
